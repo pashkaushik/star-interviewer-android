@@ -1,0 +1,2 @@
+VSCode Process ID (PID): 9580
+This file was created to store the VSCode process ID from the environment variables.
