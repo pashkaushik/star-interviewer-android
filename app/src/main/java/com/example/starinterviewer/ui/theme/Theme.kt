@@ -3,11 +3,7 @@ package com.example.starinterviewer.ui.theme
 import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.dynamicDarkColorScheme
-import androidx.compose.material3.dynamicLightColorScheme
-import androidx.compose.material3.lightColorScheme
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.graphics.toArgb
@@ -16,47 +12,29 @@ import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
 private val DarkColorScheme = darkColorScheme(
-    primary = AirbnbAccentRed,
-    secondary = AirbnbAccentGreen,
-    tertiary = AirbnbAccentBlue,
-    surface = AirbnbNeutral900,
-    background = AirbnbNeutral800,
-    onPrimary = AirbnbWhite,
-    onSecondary = AirbnbWhite,
-    onTertiary = AirbnbWhite,
-    onSurface = AirbnbWhite,
-    onBackground = AirbnbWhite,
-    error = AirbnbError,
-    onError = AirbnbWhite,
-    surfaceVariant = AirbnbNeutral700,
-    onSurfaceVariant = AirbnbNeutral200,
-    inverseSurface = AirbnbNeutral100,
-    inverseOnSurface = AirbnbNeutral900,
-    outline = AirbnbNeutral600,
-    outlineVariant = AirbnbNeutral700,
-    scrim = AirbnbNeutral900.copy(alpha = 0.5f)
+    primary = AirbnbPink,
+    secondary = AirbnbRed,
+    tertiary = AirbnbDeepRed,
+    background = DarkBackground,
+    surface = DarkSurface,
+    onPrimary = White,
+    onSecondary = White,
+    onTertiary = White,
+    onBackground = White,
+    onSurface = White
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = AirbnbAccentRed,
-    secondary = AirbnbAccentGreen,
-    tertiary = AirbnbAccentBlue,
-    surface = AirbnbWhite,
-    background = AirbnbLightGray,
-    onPrimary = AirbnbWhite,
-    onSecondary = AirbnbBlack,
-    onTertiary = AirbnbWhite,
-    onSurface = AirbnbBlack,
-    onBackground = AirbnbBlack,
-    error = AirbnbError,
-    onError = AirbnbWhite,
-    surfaceVariant = AirbnbNeutral100,
-    onSurfaceVariant = AirbnbNeutral700,
-    inverseSurface = AirbnbNeutral900,
-    inverseOnSurface = AirbnbNeutral100,
-    outline = AirbnbNeutral300,
-    outlineVariant = AirbnbNeutral200,
-    scrim = AirbnbNeutral900.copy(alpha = 0.5f)
+    primary = AirbnbPink,
+    secondary = AirbnbRed,
+    tertiary = AirbnbDeepRed,
+    background = White,
+    surface = LightSurface,
+    onPrimary = White,
+    onSecondary = White,
+    onTertiary = White,
+    onBackground = DarkText,
+    onSurface = DarkText
 )
 
 @Composable
